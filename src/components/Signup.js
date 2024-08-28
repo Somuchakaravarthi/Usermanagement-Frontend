@@ -22,7 +22,7 @@ const Signup = () => {
         try {
             await axios.post('http://localhost:5000/api/auth/signup', formData);
              toast.success('Signup successful! Redirecting to login page.');
-            setTimeout(() => navigate('/login'), 2000);
+            setTimeout(() => navigate('/login'), 1000);
         } catch (err) {
            toast.error(err.message);
         }

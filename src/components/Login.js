@@ -22,7 +22,7 @@ const Login = () => {
             localStorage.setItem('token', res.data.token);
             login();
               toast.success('Login successful! Redirecting to user list.');
-            setTimeout(() => navigate('/users'), 2000);
+            setTimeout(() => navigate('/users'), 1000);
         } catch (err) {
             toast.error(err?.response?.data?.msg);
         }
